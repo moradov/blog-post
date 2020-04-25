@@ -1,0 +1,22 @@
+.add-blog {
+  width: 71px;
+  height: 70px;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 13px;
+  bottom: 40px;
+  border-radius: 98px;
+  cursor: pointer;
+  .fas,
+  .fa {
+    font-size: 39px;
+  }
+}

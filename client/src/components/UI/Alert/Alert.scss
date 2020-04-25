@@ -1,0 +1,19 @@
+.success,
+.danger {
+  position: fixed;
+  top: 50px;
+  left: 35vw;
+  color: #fff;
+  width: 311px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 9px;
+  border-radius: 10px;
+}
+.success {
+  background-color: orange;
+}
+.danger {
+  background-color: rgb(255, 0, 0);
+}

@@ -1,0 +1,7 @@
+.main-posts {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+}

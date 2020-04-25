@@ -1,0 +1,2 @@
+[0923/170454.628:ERROR:file_io.cc(134)] WriteFile: Le canal de communication est sur le point d’être fermé. (0xE8)
+[1003/055544.122:ERROR:file_io.cc(134)] WriteFile: Le canal de communication est sur le point d’être fermé. (0xE8)

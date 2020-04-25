@@ -1,0 +1,17 @@
+@mixin flex($direction: column, $just: space-between, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $just;
+  align-items: $align;
+}
+@mixin button($backgroundColor, $color: rgb(200, 187, 187)) {
+  cursor: pointer;
+  padding: 8px 40px;
+  background-color: $backgroundColor;
+  border: navajowhite;
+  border-radius: 3px;
+  margin: 17px;
+  font-size: 15px;
+  font-weight: bold;
+  color: $color;
+}

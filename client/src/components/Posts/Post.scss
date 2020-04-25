@@ -1,0 +1,49 @@
+@import "../_sass/mixins";
+@import "../_sass/classes";
+.post {
+  width: 100%;
+
+  @include flex(column, space-between, center);
+  border: 2px solid orange;
+  text-align: center;
+  padding: 5px;
+  padding-top: 56px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  .post-img {
+    width: 72%;
+    height: 204px;
+  }
+  .post-title {
+    width: 100%;
+    height: 35%;
+    @extend %title;
+    color: #5a5a5a;
+  }
+  .post-desc {
+    width: 70%;
+    font-size: 18px;
+    color: #717169;
+  }
+  .post-info {
+    width: 100%;
+    height: 15%;
+    @include flex(row, space-between, center);
+    padding: 17px 0px 20px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media (max-width: 450px) {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #8e877f;
+      .fas {
+        font-size: 25px;
+        color: orange;
+      }
+    }
+  }
+}

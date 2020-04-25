@@ -1,0 +1,59 @@
+@import "../../components/_sass/classes";
+@import "../../components/_sass/mixins";
+.single-post {
+  width: 60%;
+  height: 6000px;
+  margin: auto;
+  padding-top: 50px;
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  .content {
+    padding-bottom: 70px;
+    border-bottom: 0.5px solid orange;
+    .title {
+      @extend %title;
+      padding: 30px 0px;
+    }
+    img {
+      width: 100%;
+      height: 300px;
+      text-align: center;
+    }
+    .post-body {
+      @extend %p;
+      margin-bottom: 30px;
+      @media (max-width: 500px) {
+        padding: 16px 1px;
+      }
+    }
+    .tags {
+      font-size: 22px;
+      color: #969695;
+
+      span {
+        padding: 2px 15px;
+        background-color: orange;
+        color: #fff;
+        margin-left: 12px;
+        font-size: 18px;
+        @media (max-width: 500px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .related-posts {
+    padding-top: 70px;
+    h2 {
+      padding-bottom: 50px;
+      color: #5a5a5a;
+    }
+    .posts {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    }
+  }
+}

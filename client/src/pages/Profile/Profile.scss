@@ -1,0 +1,86 @@
+@import "../../components/_sass/mixins";
+.cover {
+  width: 100%;
+  height: 200px;
+  background-color: #987027;
+}
+.user-profile {
+  width: 80%;
+  margin: auto;
+  @media (max-width: 450px) {
+    width: 90%;
+  }
+  .user-profile-header {
+    .profile-desc {
+      @include flex(row, space-between, center);
+      .left {
+        .user-img {
+          width: 142px;
+          height: 140px;
+          border-radius: 100px;
+          margin-top: -78px;
+        }
+        .user-name {
+          font-size: 25px;
+          padding-left: 15px;
+        }
+        .user-desc {
+          font-size: 18px;
+          width: 76%;
+          color: #757572;
+          padding: 12px 20px;
+          @media (max-width: 450px) {
+            width: 100%;
+          }
+        }
+        .sub-date {
+          font-size: 19px;
+          color: #000000;
+          padding: 2px 20px;
+          padding-left: 0px;
+          width: 136%;
+        }
+        .user-statistic {
+          display: grid;
+          font-size: 19px;
+          color: #000000;
+          padding: 2px 20px;
+        }
+      }
+      .right {
+        .edit {
+          font-size: 19px;
+          padding: 4px 11px;
+          background: none;
+          border-radius: 23px;
+          border: 1px solid orange;
+          width: 95px;
+          font-weight: bold;
+          color: orange;
+          .fa-cog {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+  .profile-content {
+    padding-top: 100px;
+    width: 60%;
+    margin: auto;
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+    h3 {
+      padding-bottom: 46px;
+    }
+    .user-posts {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+  }
+}
