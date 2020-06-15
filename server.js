@@ -12,9 +12,7 @@ app.use(express.json({ extended: false }));
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/posts", require("./routes/posts"));
-app.get("api/test", (req, res) => {
-  res.send("fuck");
-});
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log("the server work at port " + PORT));
