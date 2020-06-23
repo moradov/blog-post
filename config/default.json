@@ -1,4 +1,4 @@
 {
-  "mongoURL": "mongodb+srv://morad:morad123@cluster0-hmzfv.mongodb.net/test?retryWrites=true&w=majority",
+  "mongoURL": "mongodb+srv://morad:@cluster0-hmzfv.mongodb.net/test?retryWrites=true&w=majority",
   "secret": "secret"
 }
